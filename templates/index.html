@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Stroke Predictor</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Heart Stroke Predictor</h1>
+    <form action="/predict" method="POST">
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div>
+            <label for="currentsmoker">Current smoker</label>
+            <select id="currentsmoker" name="currentsmoker" required>
+                <option value="" disabled selected>Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="cigsperday">Cigarettes per day</label>
+            <input type="number" id="cigsperday" name="cigsperday" step="any" required>
+        </div>
+
+        <div>
+            <label for="bpmeds">Blood pressure medication</label>
+            <select id="bpmeds" name="bpmeds" required>
+                <option value="" disabled selected>Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="prevalentstroke">Prevalent stroke</label>
+            <select id="prevalentstroke" name="prevalentstroke" required>
+                <option value="" disabled selected>Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="prevalenthyp">Prevalent hypertension</label>
+            <select id="prevalenthyp" name="prevalenthyp" required>
+                <option value="" disabled selected>Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="diabetes">Diabetes</label>
+            <select id="diabetes" name="diabetes" required>
+                <option value="" disabled selected>Select</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="totcol">Total cholesterol</label>
+            <input type="number" id="totcol" name="totcol" step="any" required>
+        </div>
+
+        <div>
+            <label for="sysbp">Systolic blood pressure</label>
+            <input type="number" id="sysbp" name="sysbp" step="any" required>
+        </div>
+
+        <div>
+            <label for="diabp">Diastolic blood pressure</label>
+            <input type="number" id="diabp" name="diabp" step="any" required>
+        </div>
+
+        <div>
+            <label for="BMI">BMI</label>
+            <input type="number" id="BMI" name="BMI" step = "any" required>
+        </div>
+
+        <div>
+            <label for="heartrate">Heart rate</label>
+            <input type="number" id="heartrate" name="heartrate" step="any" required>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

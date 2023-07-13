@@ -1,0 +1,28 @@
+IMP POINTS TO NOTE:
+1. Remove NULL values, columns and also remove useless columns by drawing graphs (Bar graph, histogram etc).
+
+2. Split data into train, val and test sets as = (70%, 20%, 10%).
+
+3. Start applying data preprocessing on all the 3 sets (Ask chat-gpt or google what preprocessing should I apply on which columns and what should be the order of these preprocessing).
+
+4. Build a model using CNN (Dont forget to use early_stopping, and number of input points in input layer = number of columns we are using, number of output points in output layer = count of target values in our dataset (here 2 --> either heart attack or no heart attack) of apply OHE on columns instead of label encoding, train for 100 epochs).
+
+(*) 5. Most Important - If val accuracy is going up and down (even by very small amount) while training then our model is OVERFITTING, so perform hyper-parameter tuning on it (draw val_accuracy histogram to check if its value is going up and down or not).
+
+6. Save the model and test model on test dataset and print the test accuracy.
+
+
+
+DATA PREPROCESSING STEPS:
+
+1. Filling or removing missing data
+
+2. Removing outliers
+
+3. Encoding categorical data
+
+4. Balancing data
+
+5. Splitting the dataset into training and test sets
+
+6. Normalizing training dataset only
